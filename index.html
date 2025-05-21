@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800"
+    />
+    <title>愛媛かんきつ</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <!-- ==== Header ==== -->
+        <header
+          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f5f2f0] px-10 py-3"
+        >
+          <div class="flex items-center gap-4 text-[#181411]">
+            <div class="size-4">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2
+              class="text-[#181411] text-lg font-bold leading-tight tracking-[-0.015em]"
+            >
+              Ehime&nbsp;Citrus
+            </h2>
+          </div>
+
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#181411] text-sm font-medium" href="#"
+                >えひめとは</a
+              >
+              <a class="text-[#181411] text-sm font-medium" href="#品種"
+                >品種</a
+              >
+              <a class="text-[#181411] text-sm font-medium" href="#stories"
+                >農園ストーリー</a
+              >
+              <a class="text-[#181411] text-sm font-medium" href="#sets"
+                >詰め合わせセット</a
+              >
+              <a class="text-[#181411] text-sm font-medium" href="#tours"
+                >バーチャルツアー</a
+              >
+            </div>
+            <button
+              class="flex h-10 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-[#f38124] px-4 text-sm font-bold tracking-[0.015em] text-[#181411]"
+            >
+              <span class="truncate">今すぐ購入</span>
+            </button>
+          </div>
+        </header>
+
+        <!-- ==== Hero ==== -->
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex max-w-[960px] flex-1 flex-col">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col items-center justify-center gap-6 bg-cover bg-center bg-no-repeat p-4 @[480px]:gap-8 @[480px]:rounded-xl"
+                  style='background-image:linear-gradient(rgba(0,0,0,.1)0%,rgba(0,0,0,.4)100%),url("https://lh3.googleusercontent.com/aida-public/AB6AXuAM1iOy0TS6TR7MEWzX96V_ZUySwIJIBE-siljL73BPkPQB76T76Y9Cj_RMqg7Nu2Cx4rhtkKXFK3lbEQq6AYq4vKTZLRzm7qVgZv6i2avUQ7szPz_64laFD0SqFhwNfg7aRka1IDUuBNM78_LQ_fxdYXjsgT0AA3FAKj5Kkt_-xo_HMUbFPKsS78WupnjuhcF7XguyZgoHvb4uWQNJlejbeSlaezcMw0wFOltHCE2-kOrI6P3A2vAfoG7bn16qbd7OY_34UkNGYZQ_");'
+                >
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1
+                      class="text-4xl font-black leading-tight tracking-[-0.033em] text-white @[480px]:text-5xl"
+                    >
+                      愛媛の太陽を味わおう
+                    </h1>
+                    <h2
+                      class="text-sm font-normal leading-normal text-white @[480px]:text-base"
+                    >
+                      自然が育んだ愛媛かんきつの豊かな風味をお楽しみください。
+                    </h2>
+                  </div>
+                  <button
+                    class="flex h-10 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-[#f38124] px-4 text-sm font-bold tracking-[0.015em] text-[#181411] @[480px]:h-12 @[480px]:px-5 @[480px]:text-base"
+                  >
+                    <span class="truncate">かんきつを探す</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ==== Varieties ==== -->
+            <h2
+              id="品種"
+              class="px-4 pb-3 pt-5 text-[22px] font-bold leading-tight tracking-[-0.015em] text-[#181411]"
+            >
+              かんきつの品種
+            </h2>
+
+            <div
+              class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            >
+              <div class="flex items-stretch gap-3 p-4">
+                <!-- Mikan -->
+                <div class="min-w-60 flex h-full flex-1 flex-col gap-4 rounded-lg">
+                  <div
+                    class="aspect-square w-full rounded-xl bg-cover bg-center bg-no-repeat"
+                    style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgrERehtwNZ4ztMl6zuv3zCtljnMnznhQfQhNn4Si69Gb_p4TI10rwMpc8CmZAyCuVG_9NKITtah0GUNaBBU87O39oxECUKjaj8nAKeumULrhKtO7HvC_Ez_W8WS0cJBMZnn38JtVLFd2K49B8VAix-bNruqp_OM7ITq0y4IG4JyDzB7emWJMjy4HdzEf4SUZMlzuYrOxOB2rE15-p2uTFHkNYe1sQhFRk7nAneKbk50gtrV2WX2MV38Di3y75GU7y4RhUsVv35XlE");'
+                  ></div>
+                  <div>
+                    <p class="text-base font-medium text-[#181411]">みかん</p>
+                    <p class="text-sm font-normal text-[#8a7360]">
+                      甘みと酸味のバランスが絶妙な、愛媛を代表する定番のかんきつ。
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Iyokan -->
+                <div class="min-w-60 flex h-full flex-1 flex-col gap-4 rounded-lg">
+                  <div
+                    class="aspect-square w-full rounded-xl bg-cover bg-center bg-no-repeat"
+                    style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2XKOwptsarcBuOc3NzF0YJCry4oNfTAylkCyZdGx8u-N2ldoRyoRI2mQHGQZjlRexwPRoipRV9YcuzOquYD6B57UFwupjQYCTypbE4-8G1qbMsChBJVCbeEC7dJfjj4FSqOpSIcujpLH-eb1Qjjyx17xYEWKdxc5h7sKohrsTKhBcUGI7c75-6KHF9loxYEdaSRgujKysiarsOzNYblu2I8wMUIgdEnJNIDAsoVr7Vy9LDoAe4n9KoLC2MN5l2edEn9Ctc2tMWFK2");'
+                  ></div>
+                  <div>
+                    <p class="text-base font-medium text-[#181411]">いよかん</p>
+                    <p class="text-sm font-normal text-[#8a7360]">
+                      ジューシーで香り高く、豊かで複雑な味わいが魅力です。
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Haruka -->
+                <div class="min-w-60 flex h-full flex-1 flex-col gap-4 rounded-lg">
+                  <div
+                    class="aspect-square w-full rounded-xl bg-cover bg-center bg-no-repeat"
+                    style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuAczEknqVFRV97rn7eFSurec3fVYCQALqIiyKOgH0gl1FC_XS_7nfqtWWS0a8Dd0PiriEf-eQZdC0U_VB5CE7847M4nEP_5YiKXxRcWrWuIIZKmAIJe0dVFBOsn6w7HJmkT28JaqfM38gyvshH2FMWF4khRJWDJoBodN-wFsWLBaaFzfvUgiexiMHHWO7pl41wbifc7MwQs_y412HYaY2XbYkjh4XUkzEDc4lfUGyZkMZFESo49dD8wgFyhokTc6o2bqkO4ZAWIp9aa");'
+                  ></div>
+                  <div>
+                    <p class="text-base font-medium text-[#181411]">はるか</p>
+                    <p class="text-sm font-normal text-[#8a7360]">
+                      蜂蜜のような甘さを持つ、希少で高級なかんきつです。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ==== Orchard Stories ==== -->
+            <h2
+              id="stories"
+              class="px-4 pb-3 pt-5 text-[22px] font-bold leading-tight tracking-[-0.015em] text-[#181411]"
+            >
+              農園の物語
+            </h2>
+            <div
+              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+            >
+              <!-- Story 1 -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="aspect-video w-full rounded-xl bg-cover bg-center bg-no-repeat"
+                  style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuDf5OiBDJWwn-YZl7X5zd-83w2vOmdruukAd7PXOzsUT2QbuqRsGXpRqb8xmJBx3YB9lyZj9i-Ch-uWYyCL9k3pSHcClkXkyDQ1S1MmMfiOFN_JTkN-XN0e-YXshZ88bNdSLeT4YYMjrOJ2i6b3zSv1sPT9TqsxIhJJ3NIbG7e2l_Re9MKAvc5z8VaXrBSSOqUTtGU_qL9HBg2_g3ZeAnbxDJpmRdv2UxbHV7xT-UNocdFmByGCZgIc0k6jsrTaQruT7A9qQGaRrAm7");'
+                ></div>
+                <div>
+                  <p class="text-base font-medium text-[#181411]">
+                    花から収穫まで：農園の一年
+                  </p>
+                  <p class="text-sm font-normal text-[#8a7360]">
+                    春の繊細な花から冬の豊かな収穫まで、かんきつの旅路を追います。
+                  </p>
+                </div>
+              </div>
+
+              <!-- Story 2 -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="aspect-video w-full rounded-xl bg-cover bg-center bg-no-repeat"
+                  style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuAT13uZnyxEnjAmWIUYiArgxx2iPmuc93UBAGe-rnwN5VVo9NCAlK8ce81iv1Ql4hkljUeNaxEQJnbDZo4AMohqAQIr8YFJFwCxkA0jjvT6CdQeD97SJ5wxojQKE9vOCDGXBH8quWM4e8N0DTEYl9JikuFXcXviEY1gsPfEeBVSCFA4bZYi9A4D2aCmqPs-x_yrl-Sgu6aOxB3610d2393Gy8gVQydky1d86CxgzJZFaLel74FC3w8b2pQ20nDDIopGkNzG8kiY1_om");'
+                ></div>
+                <div>
+                  <p class="text-base font-medium text-[#181411]">
+                    かんきつ栽培の技：伝統と革新の融合
+                  </p>
+                  <p class="text-sm font-normal text-[#8a7360]">
+                    卓越した品質を支える丁寧な技術と持続可能な取り組みをご紹介します。
+                  </p>
+                </div>
+              </div>
+
+              <!-- Story 3 -->
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="aspect-video w-full rounded-xl bg-cover bg-center bg-no-repeat"
+                  style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuAyKcVfg-_Qb7w0g8iro25PrO-mJFd6WVrNE6pbClfDpSBDWIl19hfzGu_Wgj1KzNvWs7VCQqkyWtosm4noqGE3KRsCo2vkgoLbLMjnU0RuKQpjtEE66WTOFxDJbheCGLrBh3x1I6DBfDgl6tMNf2HWiji2jS61O6RGhGMcHTgc7ob3p5uRp7oiD1ZOqtKOtpcG1csYuBCqy9Abjghr4UyZKyEhLx4_JSWZO-HzZOkbmMdrSQKEsP8Pff5AT7GWdDEmZTNUg6K8B6Lo");'
+                ></div>
+                <div>
+                  <p class="text-base font-medium text-[#181411]">
+                    農家の想い：愛媛の情熱的な生産者たち
+                  </p>
+                  <p class="text-sm font-normal text-[#8a7360]">
+                    愛媛のかんきつづくりに心血を注ぐ生産者の声をお届けします。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ==== Tasting Sets ==== -->
+            <h2
+              id="sets"
+              class="px-4 pb-3 pt-5 text-[22px] font-bold leading-tight tracking-[-0.015em] text-[#181411]"
+            >
+              テイスティングセット
+            </h2>
+            <div class="p-4 @container">
+              <div
+                class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start"
+              >
+                <div
+                  class="aspect-video w-full rounded-xl bg-cover bg-center bg-no-repeat"
+                  style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4OJfzt7Sfca1mUpw2FSCzdR1k1c8NzlQJmLCnck8-SkHQS2wzIs0NsN6ZKK6rHQQUnHSmnmEL0Q7iI34V-utSAglZk2GGgVF7vFKgw3vW1sECortuyDwAOexutaqwI2lz9nmvM1lkDiCitiMnke4UFjoxBwCTjxG9BS9GwJcLd8EuTDp8QS9PpE1y9hFtrK3HHhfK6NoZOGHLwlvk9v638zXLQp84pWYtUIp8yajl7WRDo46LRLwYed1xvJowxaQ71PGtP_eniqfg");'
+                ></div>
+                <div
+                  class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4"
+                >
+                  <p
+                    class="text-lg font-bold leading-tight tracking-[-0.015em] text-[#181411]"
+                  >
+                    季節のかんきつテイスティングセット
+                  </p>
+                  <div class="flex items-end justify-between gap-3">
+                    <p class="text-base font-normal text-[#8a7360]">
+                      愛媛の旬のかんきつを厳選したセットで、多彩な味わいをご体験ください。
+                    </p>
+                    <button
+                      class="flex h-8 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-[#f38124] px-4 text-sm font-medium text-[#181411]"
+                    >
+                      <span class="truncate">今すぐ注文</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ==== Virtual Tour ==== -->
+            <h2
+              id="tours"
+              class="px-4 pb-3 pt-5 text-[22px] font-bold leading-tight tracking-[-0.015em] text-[#181411]"
+            >
+              バーチャル農園ツアー
+            </h2>
+            <div class="p-4 @container">
+              <div
+                class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start"
+              >
+                <div
+                  class="aspect-video w-full rounded-xl bg-cover bg-center bg-no-repeat"
+                  style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuCt0nX6bvGQ6w-y6imL3nZHJGKWC6rYGJaiClbTeyy7sZaCqCcVzEhpHheUCzUhdHlgpN9J9_PKQhbARlpualFW5UGUc55H24ONf1SQjyzFSvsZ1n9MEEBIO5ckkxhGKN9cwcVcqqI0E4EdvcZQIRn_0mS07YF2JYO2DAufNwu-dldyBrmcBEXFUic4eId9Y9pfB_pIFm-eLjsBjOFMj9vB_hG4N70vBUgX4SFIjR_4eGA_WT5IVmpx-4Sr77_MRVoyw70e5LszbgCp");'
+                ></div>
+                <div
+                  class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4"
+                >
+                  <p
+                    class="text-lg font-bold leading-tight tracking-[-0.015em] text-[#181411]"
+                  >
+                    バーチャル農園ツアーへ参加
+                  </p>
+                  <div class="flex items-end justify-between gap-3">
+                    <p class="text-base font-normal text-[#8a7360]">
+                      ご自宅から美しい農園を巡り、愛媛かんきつの個性を学びましょう。
+                    </p>
+                    <button
+                      class="flex h-8 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-[#f38124] px-4 text-sm font-medium text-[#181411]"
+                    >
+                      <span class="truncate">ツアー予約</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ==== CTA ==== -->
+            <div class="@container">
+              <div
+                class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20"
+              >
+                <div class="flex flex-col gap-2 text-center">
+                  <h1
+                    class="max-w-[720px] text-[32px] font-bold leading-tight tracking-light text-[#181411] @[480px]:text-4xl @[480px]:font-black @[480px]:tracking-[-0.033em]"
+                  >
+                    愛媛の味をご家庭へ
+                  </h1>
+                  <p
+                    class="max-w-[720px] text-base font-normal leading-normal text-[#181411]"
+                  >
+                    お好みの愛媛かんきつを注文して、一口ごとに太陽の恵みを感じてください。
+                  </p>
+                </div>
+                <div class="flex flex-1 justify-center">
+                  <div class="flex justify-center">
+                    <button
+                      class="grow flex h-10 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-[#f38124] px-4 text-sm font-bold tracking-[0.015em] text-[#181411] @[480px]:h-12 @[480px]:px-5 @[480px]:text-base"
+                    >
+                      <span class="truncate">今すぐ購入</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==== Footer ==== -->
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer
+              class="flex flex-col gap-6 px-5 py-10 text-center @container"
+            >
+              <div
+                class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around"
+              >
+                <a
+                  class="min-w-40 text-base font-normal leading-normal text-[#8a7360]"
+                  href="#"
+                  >私たちについて</a
+                >
+                <a
+                  class="min-w-40 text-base font-normal leading-normal text-[#8a7360]"
+                  href="#"
+                  >お問い合わせ</a
+                >
+                <a
+                  class="min-w-40 text-base font-normal leading-normal text-[#8a7360]"
+                  href="#"
+                  >配送・返品</a
+                >
+                <a
+                  class="min-w-40 text-base font-normal leading-normal text-[#8a7360]"
+                  href="#"
+                  >プライバシーポリシー</a
+                >
+              </div>
+
+              <!-- social links -->
+              <div class="flex flex-wrap justify-center gap-4">
+                <!-- Twitter -->
+                <a href="#">
+                  <div
+                    class="text-[#8a7360]"
+                    data-icon="TwitterLogo"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24px"
+                      height="24px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <!-- Instagram -->
+                <a href="#">
+                  <div
+                    class="text-[#8a7360]"
+                    data-icon="InstagramLogo"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24px"
+                      height="24px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <!-- Facebook -->
+                <a href="#">
+                  <div
+                    class="text-[#8a7360]"
+                    data-icon="FacebookLogo"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24px"
+                      height="24px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+
+              <p
+                class="text-base font-normal leading-normal text-[#8a7360]"
+              >
+                © 2023 Ehime Citrus. 無断転載を禁じます。
+              </p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
